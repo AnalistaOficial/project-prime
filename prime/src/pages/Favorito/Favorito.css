@@ -1,0 +1,152 @@
+/* Estilo geral da página de favoritos */
+.meus-filmes {
+    background-color: #121212;
+    color: #f1f1f1;
+    padding: 30px;
+    max-width: 800px; /* Largura máxima da página */
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título da página */
+.meus-filmes h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffcc00;
+}
+
+/* Estilo para a lista de filmes */
+.meus-filmes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.meus-filmes li {
+    background-color: #1c1c1c;
+    margin: 8px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meus-filmes li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para o título do filme */
+.meus-filmes li span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-right: 15px;
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+}
+
+/* Imagem do filme */
+.meus-filmes li img {
+    width: 80px; /* Tamanho da imagem */
+    height: 120px; /* Tamanho da imagem */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo para os links e botões */
+.meus-filmes li div {
+    display: flex;
+    gap: 10px;
+}
+
+.meus-filmes a, .meus-filmes button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.meus-filmes a:hover, .meus-filmes button:hover {
+    background-color: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Estilo para o botão de excluir */
+.meus-filmes button {
+    background-color: #ff4d4d;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.meus-filmes button:hover {
+    background-color: #e60000;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .meus-filmes li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meus-filmes li span {
+        margin-right: 0;
+    }
+
+    .meus-filmes li img {
+        margin-bottom: 10px; /* Ajusta a imagem para telas pequenas */
+    }
+
+    .meus-filmes h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: #1c1c1c;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1c1c1c;
+  }
+  
+  .modal button:hover {
+    background-color: #e6b800;
+  }
+  
