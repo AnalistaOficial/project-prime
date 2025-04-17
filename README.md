@@ -52,8 +52,8 @@ Siga as etapas abaixo para executar o projeto localmente com Docker:
 Clone este repositório para a sua máquina:
 
 ```bash
-git clone https://seu-repositorio.git
-cd nome-do-diretorio
+git clone https://github.com/AnalistaOficial/project-prime.git
+cd project-prime
 
 ## 3. Acesse a aplicação
 
